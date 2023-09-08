@@ -1,12 +1,17 @@
 #todo test app
 
 from functions import get_todo,write_todo
+import time
 
 file_path = 'todo.txt'
 
+now = time.strftime("%b %d,%Y %H:%M:%S")
+
+print("It is ",now)
+
 
 while True:
-    prompt = " Add , Show , Edit , Complete and Exit :"
+    prompt = "Add , Show , Edit , Complete and Exit :"
     user_input = input(prompt).strip()
     
         
